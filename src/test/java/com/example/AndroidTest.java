@@ -1,45 +1,64 @@
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+package com.example;
+
+import com.example.utils.AppiumServerManager;
+import com.example.utils.CustomAppiumDriverManager;
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class AndroidTest {
-    private AndroidDriver driver;
+    private AppiumDriver driver;
+
+    AppiumServerManager serverManager = new AppiumServerManager();
+
+    @BeforeSuite
+    public void startAppium() {
+        serverManager.startServer();
+    }
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "GenericAndroidDevice");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        // Using ApiDemos APK (download from:
-        // https://github.com/appium/appium/raw/master/sample-code/apps/ApiDemos-debug.apk)
-        caps.setCapability(MobileCapabilityType.APP, "apps/ApiDemos-debug.apk");
-        caps.setCapability(MobileCapabilityType.NO_RESET, true);
-
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+        driver = CustomAppiumDriverManager.getDriver();
     }
 
     @Test
-    public void testApiDemosLaunch() {
-        // Placeholder test: Simulate launching ApiDemos and clicking an item
+    public void testApiDemosLaunchSuccess() {
         System.out.println("Simulating ApiDemos app launch test...");
-        // Hypothetical interaction (not executable without a device)
-        // driver.findElementByAccessibilityId("Accessibility").click();
-        // boolean isNodeDisplayed = driver.findElementByAccessibilityId("Accessibility
-        // Node Querying").isDisplayed();
-        // assert isNodeDisplayed : "Failed to navigate to Accessibility section";
+
+        WebElement accessibilityElement = driver.findElement(
+                AppiumBy.accessibilityId("Accessibility"));
+        accessibilityElement.click();
+
+        WebElement nodeQueryingElement = driver.findElement(
+                AppiumBy.accessibilityId("Accessibility Node Querying"));
+
+        assert nodeQueryingElement.isDisplayed() : "Failed to navigate to Accessibility section";
+    }
+
+    @Test
+    public void testApiDemosLaunchFailed() {
+        System.out.println("Simulating ApiDemos app launch test...");
+
+        WebElement accessibilityElement = driver.findElement(
+                AppiumBy.accessibilityId("Accessibility"));
+        accessibilityElement.click();
+
+        WebElement nodeQueryingElement = driver.findElement(
+                AppiumBy.accessibilityId("Accessibility Node Querying (not exist)"));
+
+        assert nodeQueryingElement.isDisplayed() : "Failed to navigate to Accessibility section";
     }
 
     @AfterMethod
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        CustomAppiumDriverManager.quitDriver();
+    }
+
+    @AfterSuite
+    public void stopAppium() {
+        serverManager.stopServer();
     }
 }
