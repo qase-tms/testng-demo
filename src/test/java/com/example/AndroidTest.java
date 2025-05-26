@@ -1,5 +1,6 @@
 package com.example;
 
+import java.io.IOException;
 import com.example.utils.AppiumServerManager;
 import com.example.utils.CustomAppiumDriverManager;
 import io.appium.java_client.AppiumBy;
@@ -16,8 +17,14 @@ public class AndroidTest {
 
     @BeforeSuite
     public void startAppium() {
-        serverManager.startServer();
+        try {
+            serverManager.startServer();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to start Appium server", e);
+        }
     }
+
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {

@@ -22,7 +22,7 @@ public class CustomAppiumDriverManager {
             options.setPlatformName("Android");
             options.setFullReset(false);
 
-            URL appiumServerURL = new URL("http://localhost:4723/wd/hub");
+            URL appiumServerURL = new URL("http://localhost:4723");
 
             AppiumDriver instance = new AndroidDriver(appiumServerURL, options);
             instance.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
