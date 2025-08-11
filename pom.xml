@@ -19,7 +19,7 @@
    <dependency>
       <groupId>io.qase</groupId>
       <artifactId>qase-testng-reporter</artifactId>
-      <version>4.0.10</version>
+      <version>4.1.9</version>
       <scope>test</scope>
    </dependency>
    <dependency>
