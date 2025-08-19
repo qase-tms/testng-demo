@@ -11,6 +11,15 @@ To simplify the runtime execution command and avoid very long classpaths, all de
 
 ## Running Tests
 
+Add Qase API token
+
+If you are running tests locally, please add the Qase API token in the `qase.config.json` file
+```json
+      "api": {
+        "token": "<add_token_here>"
+      },
+```
+
 Compile the project using Maven:
 
 ```bash
