@@ -14,7 +14,8 @@ To simplify the runtime execution command and avoid very long classpaths, all de
 Compile the project using Maven:
 
 ```bash
-mvn clean compile
+mvn compile
+mvn test-compile
 ```
 
 Run the tests using the following command:
