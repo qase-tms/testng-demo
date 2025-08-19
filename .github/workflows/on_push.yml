@@ -1,5 +1,4 @@
-name: Example tests
-
+name: On Push Test
 on:
   push:
     branches:
@@ -31,9 +30,18 @@ jobs:
           COMMIT_MESSAGE=$(git log -1 --pretty=format:%s)
           echo "QASE_TESTOPS_RUN_TITLE=qase-testng@$BRANCH_NAME: $COMMIT_MESSAGE" >> $GITHUB_ENV
 
-      - name: Install Dependencies
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Compile project (Maven only for deps + build)
         run: mvn clean install -DskipTests
 
-      - name: Run TestNG tests
+      - name: Run TestNG tests (direct Java)
         run: |
-          QASE_MODE=testops mvn clean test
+          java \
+            -javaagent:$HOME/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar \
+            -cp "target/classes:target/test-classes:libs/*" \
+            com.example.base.TestRunner
