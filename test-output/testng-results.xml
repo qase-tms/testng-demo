@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="33" passed="32" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-19T15:39:35 IST" name="AllTestsSuite" finished-at="2025-08-19T15:39:36 IST" duration-ms="1488">
+    <groups>
+    </groups>
+    <test started-at="2025-08-19T15:39:35 IST" name="AllTests" finished-at="2025-08-19T15:39:36 IST" duration-ms="1488">
+      <class name="com.example.tests.StepsTest">
+        <test-method signature="testWithSteps_success()[pri:0, instance:com.example.tests.StepsTest@14ac77b9]" started-at="2025-08-19T15:39:35 IST" name="testWithSteps_success" finished-at="2025-08-19T15:39:35 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithSteps_success -->
+      </class> <!-- com.example.tests.StepsTest -->
+      <class name="com.example.tests.SampleTest">
+        <test-method signature="demoTest()[pri:0, instance:com.example.tests.SampleTest@270b6b5e]" started-at="2025-08-19T15:39:35 IST" name="demoTest" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTest -->
+      </class> <!-- com.example.tests.SampleTest -->
+      <class name="com.example.tests.FieldsTest">
+        <test-method signature="testWithFields_Description()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Description" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Description -->
+        <test-method signature="testWithFields_Layer_api()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Layer_api" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Layer_api -->
+        <test-method signature="testWithFields_Layer_e2e()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Layer_e2e" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Layer_e2e -->
+        <test-method signature="testWithFields_Layer_unit()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Layer_unit" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Layer_unit -->
+        <test-method signature="testWithFields_Postconditions()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Postconditions" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Postconditions -->
+        <test-method signature="testWithFields_Preconditions()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Preconditions" finished-at="2025-08-19T15:39:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Preconditions -->
+        <test-method signature="testWithFields_Priority_high()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Priority_high" finished-at="2025-08-19T15:39:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Priority_high -->
+        <test-method signature="testWithFields_Priority_low()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Priority_low" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Priority_low -->
+        <test-method signature="testWithFields_Priority_medium()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Priority_medium" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Priority_medium -->
+        <test-method signature="testWithFields_Severity_blocker()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Severity_blocker" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Severity_blocker -->
+        <test-method signature="testWithFields_Severity_critical()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Severity_critical" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Severity_critical -->
+        <test-method signature="testWithFields_Severity_minor()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Severity_minor" finished-at="2025-08-19T15:39:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Severity_minor -->
+        <test-method signature="testWithFields_Severity_major()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Severity_major" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Severity_major -->
+        <test-method signature="testWithFields_Severity_normal()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Severity_normal" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Severity_normal -->
+        <test-method signature="testWithFields_Severity_trivial()[pri:0, instance:com.example.tests.FieldsTest@506dcf55]" started-at="2025-08-19T15:39:35 IST" name="testWithFields_Severity_trivial" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFields_Severity_trivial -->
+      </class> <!-- com.example.tests.FieldsTest -->
+      <class name="com.example.tests.CommentTest">
+        <test-method signature="testWithComment_success()[pri:0, instance:com.example.tests.CommentTest@7c6189d5]" started-at="2025-08-19T15:39:36 IST" name="testWithComment_success" finished-at="2025-08-19T15:39:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithComment_success -->
+      </class> <!-- com.example.tests.CommentTest -->
+      <class name="com.example.tests.ParamsTest">
+        <test-method signature="testMethod_alsoPasses(java.lang.String)[pri:0, instance:com.example.tests.ParamsTest@15f2eda3]" started-at="2025-08-19T15:39:35 IST" name="testMethod_alsoPasses" data-provider="parameterData" finished-at="2025-08-19T15:39:35 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Example value1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_alsoPasses -->
+        <test-method signature="testMethod_alsoPasses(java.lang.String)[pri:0, instance:com.example.tests.ParamsTest@15f2eda3]" started-at="2025-08-19T15:39:35 IST" name="testMethod_alsoPasses" data-provider="parameterData" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Example value2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_alsoPasses -->
+        <test-method signature="testMethod_alsoPasses(java.lang.String)[pri:0, instance:com.example.tests.ParamsTest@15f2eda3]" started-at="2025-08-19T15:39:35 IST" name="testMethod_alsoPasses" data-provider="parameterData" finished-at="2025-08-19T15:39:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Example value3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_alsoPasses -->
+        <test-method signature="testMethod_success(java.lang.String)[pri:0, instance:com.example.tests.ParamsTest@15f2eda3]" started-at="2025-08-19T15:39:35 IST" name="testMethod_success" data-provider="parameterData" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Example value1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_success -->
+        <test-method signature="testMethod_success(java.lang.String)[pri:0, instance:com.example.tests.ParamsTest@15f2eda3]" started-at="2025-08-19T15:39:35 IST" name="testMethod_success" data-provider="parameterData" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Example value2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_success -->
+        <test-method signature="testMethod_success(java.lang.String)[pri:0, instance:com.example.tests.ParamsTest@15f2eda3]" started-at="2025-08-19T15:39:35 IST" name="testMethod_success" data-provider="parameterData" finished-at="2025-08-19T15:39:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Example value3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_success -->
+      </class> <!-- com.example.tests.ParamsTest -->
+      <class name="com.example.tests.AttachTest">
+        <test-method signature="testWithFileAttachment()[pri:0, instance:com.example.tests.AttachTest@3f4cd155]" started-at="2025-08-19T15:39:35 IST" name="testWithFileAttachment" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFileAttachment -->
+        <test-method signature="testWithInlineAttachment()[pri:0, instance:com.example.tests.AttachTest@3f4cd155]" started-at="2025-08-19T15:39:35 IST" name="testWithInlineAttachment" finished-at="2025-08-19T15:39:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithInlineAttachment -->
+        <test-method signature="testWithStepAttachment()[pri:0, instance:com.example.tests.AttachTest@3f4cd155]" started-at="2025-08-19T15:39:35 IST" name="testWithStepAttachment" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithStepAttachment -->
+      </class> <!-- com.example.tests.AttachTest -->
+      <class name="com.example.tests.TitleTest">
+        <test-method signature="test()[pri:0, instance:com.example.tests.TitleTest@4d7aaca2]" started-at="2025-08-19T15:39:35 IST" name="test" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.example.tests.TitleTest -->
+      <class name="com.example.tests.QaseIdTest">
+        <test-method signature="testWithQaseId_success()[pri:0, instance:com.example.tests.QaseIdTest@563a89b5]" started-at="2025-08-19T15:39:35 IST" name="testWithQaseId_success" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithQaseId_success -->
+      </class> <!-- com.example.tests.QaseIdTest -->
+      <class name="com.example.tests.SuiteTest">
+        <test-method signature="testWithSuite_failed()[pri:0, instance:com.example.tests.SuiteTest@7e94d093]" started-at="2025-08-19T15:39:35 IST" name="testWithSuite_failed" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[This test is supposed to fail!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: This test is supposed to fail!
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.tests.SuiteTest.testWithSuite_failed(SuiteTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.example.base.TestRunner.main(TestRunner.java:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithSuite_failed -->
+        <test-method signature="testWithSuite_success()[pri:0, instance:com.example.tests.SuiteTest@7e94d093]" started-at="2025-08-19T15:39:36 IST" name="testWithSuite_success" finished-at="2025-08-19T15:39:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithSuite_success -->
+      </class> <!-- com.example.tests.SuiteTest -->
+      <class name="com.example.tests.IgnoreTest">
+        <test-method signature="testWithIgnore_success()[pri:0, instance:com.example.tests.IgnoreTest@724c5cbe]" started-at="2025-08-19T15:39:35 IST" name="testWithIgnore_success" finished-at="2025-08-19T15:39:35 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithIgnore_success -->
+      </class> <!-- com.example.tests.IgnoreTest -->
+      <class name="com.example.tests.AppTest">
+        <test-method signature="Test_without_any_Qase_annotations()[pri:0, instance:com.example.tests.AppTest@34cf294c]" started-at="2025-08-19T15:39:35 IST" name="Test_without_any_Qase_annotations" finished-at="2025-08-19T15:39:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_without_any_Qase_annotations -->
+      </class> <!-- com.example.tests.AppTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- AllTestsSuite -->
+</testng-results>

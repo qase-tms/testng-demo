@@ -1,0 +1,30 @@
+{
+    "mode": "testops",
+    "debug": true,
+    "environment": "prod",
+    "testops": {
+      "api": {
+        "token": "<add_token_here>"
+      },
+      "project": "DEMO",
+      "run": {
+        "title": "TestNG Example Run",
+        "description": "Sample execution of TestNG test cases for demo",
+        "complete": true
+      },
+      "defect": false,
+      "batch": {
+      "size": 100
+    },
+    "configurations": {
+      "values": [
+        {
+          "name": "Operating System",
+          "value": "Mac OS"
+        }
+      ],
+      "createIfNotExists": true
+    }
+    }
+  }
+  
