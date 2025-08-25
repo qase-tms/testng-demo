@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ConcurrentModificationException Reproduction Suite" 
+       parallel="methods" 
+       thread-count="8" 
+       data-provider-thread-count="4"
+       verbose="2">
+    
+    <listeners>
+        <listener class-name="io.qase.testng.QaseListener"/>
+    </listeners>
+    
+    <test name="Parallel Execution Test - High Concurrency">
+        <classes>
+            <class name="com.example.tests.ParallelTestClass1"/>
+            <class name="com.example.tests.ParallelTestClass2"/>
+            <class name="com.example.tests.ParallelTestClass3"/>
+            <class name="com.example.tests.ParallelTestClass4"/>
+        </classes>
+    </test>
+    
+    <!-- Additional test group for even more concurrency pressure -->
+    <test name="Parallel Execution Test - Maximum Pressure" 
+          parallel="methods" 
+          thread-count="10">
+        <classes>
+            <class name="com.example.tests.ParallelTestClass1"/>
+            <class name="com.example.tests.ParallelTestClass2"/>
+            <class name="com.example.tests.ParallelTestClass3"/>
+            <class name="com.example.tests.ParallelTestClass4"/>
+        </classes>
+    </test>
+    
+</suite>

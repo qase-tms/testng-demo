@@ -1,0 +1,20 @@
+{
+  "mode": "testops",
+  "debug": true,
+  "testops": {
+    "api": {
+      "token": "token"
+    },
+    "project": "proj",
+    "run": {
+      "title": "ConcurrentModificationException Reproduction Run",
+      "description": "Test run designed to reproduce ConcurrentModificationException in parallel execution",
+      "complete": true
+    },
+    "batch": {
+      "size": 5
+    }
+  },
+  "usev2": true
+}
+

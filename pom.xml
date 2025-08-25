@@ -2,52 +2,60 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>qase-testng</artifactId>
+  <artifactId>qase-testng-parallel-reproduction</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>qase-testng</name>
-  <url>http://maven.apache.org</url>
+  <name>Qase TestNG Parallel Execution ConcurrentModificationException Reproduction</name>
+  <description>Minimal project to reproduce ConcurrentModificationException in Qase TestNG reporter during parallel execution</description>
 
 <properties>
    <aspectj.version>1.9.22</aspectj.version>
    <maven.compiler.source>1.8</maven.compiler.source>
    <maven.compiler.target>1.8</maven.compiler.target>
+   <testng.version>7.5.1</testng.version>
+   <qase.version>4.1.16</qase.version>
+   <maven.surefire.version>3.0.0-M7</maven.surefire.version>
 </properties>
 
-
 <dependencies>
+   <!-- Qase TestNG Reporter - The component we're testing -->
    <dependency>
       <groupId>io.qase</groupId>
       <artifactId>qase-testng-reporter</artifactId>
-      <version>4.1.16</version>
+      <version>${qase.version}</version>
       <scope>test</scope>
    </dependency>
+   
+   <!-- TestNG - Required for parallel test execution -->
    <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.8.0</version>
+      <version>${testng.version}</version>
       <scope>test</scope>
    </dependency>
+   
+   <!-- AspectJ Weaver - Required by Qase reporter -->
    <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>${aspectj.version}</version>
       <scope>test</scope>
    </dependency>
-
-    <!-- Selenium Java -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.16.1</version>
-    </dependency>
-
+   
+   <!-- Selenium dependencies - Required by legacy test files -->
    <dependency>
-       <groupId>io.github.bonigarcia</groupId>
-       <artifactId>webdrivermanager</artifactId>
-       <version>6.1.0</version>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.16.1</version>
+      <scope>test</scope>
    </dependency>
-
+   
+   <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>6.1.0</version>
+      <scope>test</scope>
+   </dependency>
 </dependencies>
 
 <build>
@@ -55,11 +63,27 @@
       <plugin>
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-surefire-plugin</artifactId>
-         <version>3.0.0-M5</version>
+         <version>${maven.surefire.version}</version>
          <configuration>
+            <!-- Enable parallel execution at method level -->
+            <parallel>methods</parallel>
+            <threadCount>8</threadCount>
+            <useUnlimitedThreads>false</useUnlimitedThreads>
+            
+            <!-- AspectJ weaver for Qase reporter -->
             <argLine>
                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
             </argLine>
+            
+            <!-- Use custom TestNG suite for parallel execution -->
+            <suiteXmlFiles>
+               <suiteXmlFile>src/test/resources/parallel-suite.xml</suiteXmlFile>
+            </suiteXmlFiles>
+            
+            <!-- Add Qase listener -->
+            <listeners>
+               <listener>io.qase.testng.QaseListener</listener>
+            </listeners>
          </configuration>
          <dependencies>
             <dependency>
