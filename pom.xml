@@ -13,7 +13,7 @@
    <maven.compiler.source>1.8</maven.compiler.source>
    <maven.compiler.target>1.8</maven.compiler.target>
    <testng.version>7.5.1</testng.version>
-   <qase.version>4.1.16</qase.version>
+   <qase.version>4.1.17</qase.version>
    <maven.surefire.version>3.0.0-M7</maven.surefire.version>
 </properties>
 
