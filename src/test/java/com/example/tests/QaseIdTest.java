@@ -5,11 +5,15 @@ import org.testng.annotations.Test;
 
 public class QaseIdTest {
     @Test
-    // Replace the Id `1` with a valid Id from your Qase project and uncomment the
-    // line below.
+    // Replace the Ids `1, 2 3` with a valid Id from your Qase project
 
     @QaseId(1)
     public void testWithQaseId_success() {
+        System.out.println("Test with QaseId");
+    }
+
+    @QaseIds({ 1, 2, 3 })
+    public void testWithMultipleQaseId_success() {
         System.out.println("Test with QaseId");
     }
 }
