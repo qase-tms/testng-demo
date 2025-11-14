@@ -1,0 +1,1928 @@
+[2025-11-14 12:41:44.177] [DEBUG] [Thread-28] [io.qase.commons.reporters.CoreReporterFactory] Qase config: {"mode":"TESTOPS","fallback":"REPORT","environment":"local","rootSuite":"","debug":true,"testops":{"project":"DW","defect":false,"api":{"host":"qase.io","token":"75f94d727ebda50896914bff834cecdacf88274b5115fcf0e475be9d0c9d8893"},"run":{"title":"Regress run","description":"Regress run description","complete":true,"id":0,"tags":[]},"plan":{"id":0},"batch":{"size":100},"configurations":{"values":[],"createIfNotExists":false},"statusFilter":[]},"report":{"driver":"LOCAL","connection":{"local":{"format":"JSON","path":"./build/qase-report"}}},"statusMapping":{}}
+[2025-11-14 12:41:44.822] [DEBUG] [Thread-28] [io.qase.commons.reporters.CoreReporterFactory] Using host info: {system=mac os x, java=21, release=26.1, buildTool=3.9.10, reporter=4.1.20, arch=aarch64, version=26.1, machineName=Vikass-MacBook-Air.local}
+[2025-11-14 12:41:45.083] [DEBUG] [Thread-28] [io.qase.commons.hooks.HooksServiceLoader] Found type interface io.qase.commons.hooks.HooksListener
+[2025-11-14 12:41:45.165] [INFO] [Thread-28] [io.qase.commons.reporters.CoreReporter] Starting test run
+[2025-11-14 12:41:46.816] [INFO] [Thread-28] [io.qase.commons.reporters.TestopsReporter] Test run 1177 started
+[2025-11-14 12:41:47.007] [DEBUG] [Thread-28] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"ab909d2c-8223-47d2-ac9c-79a9c0300ee4","title":"Test_without_any_Qase_annotations","signature":"com:example:tests::extendtest::test_without_any_qase_annotations","execution":{"startTime":1763104306995,"status":"PASSED","endTime":1763104307004,"duration":9,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ExtendTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 12:41:47.198] [ERROR] [Thread-28] [io.qase.commons.CasesStorage] A case has not been started yet.
+[2025-11-14 12:41:47.198] [INFO] [Thread-28] [io.qase.commons.reporters.CoreReporter] Uploading results
+[2025-11-14 12:41:47.203] [DEBUG] [Thread-28] [io.qase.commons.client.ApiClientV2] Uploading results: class CreateResultsRequestV2 {
+    results: [class ResultCreate {
+        id: ab909d2c-8223-47d2-ac9c-79a9c0300ee4
+        title: Test_without_any_Qase_annotations
+        signature: com:example:tests::extendtest::test_without_any_qase_annotations
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763104306995E9
+            endTime: 1.763104307004E9
+            status: passed
+            duration: 9
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ExtendTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }]
+    additionalProperties: null
+}
+[2025-11-14 12:41:48.510] [INFO] [Thread-28] [io.qase.commons.reporters.CoreReporter] Completing test run
+[2025-11-14 12:41:48.833] [INFO] [Thread-28] [io.qase.commons.client.ApiClientV1] Test run link: https://app.qase.io/run/DW/dashboard/1177
+[2025-11-14 12:41:48.833] [INFO] [Thread-28] [io.qase.commons.reporters.TestopsReporter] Test run 1177 completed
+[2025-11-14 13:01:57.179] [DEBUG] [Thread-29] [io.qase.commons.reporters.CoreReporterFactory] Qase config: {"mode":"TESTOPS","fallback":"REPORT","environment":"local","rootSuite":"","debug":true,"testops":{"project":"DW","defect":false,"api":{"host":"qase.io","token":"75f94d727ebda50896914bff834cecdacf88274b5115fcf0e475be9d0c9d8893"},"run":{"title":"Regress run","description":"Regress run description","complete":true,"id":0,"tags":[]},"plan":{"id":0},"batch":{"size":100},"configurations":{"values":[],"createIfNotExists":false},"statusFilter":[]},"report":{"driver":"LOCAL","connection":{"local":{"format":"JSON","path":"./build/qase-report"}}},"statusMapping":{}}
+[2025-11-14 13:01:57.772] [DEBUG] [Thread-29] [io.qase.commons.reporters.CoreReporterFactory] Using host info: {system=mac os x, java=21, release=26.1, buildTool=3.9.10, reporter=4.1.20, arch=aarch64, version=26.1, machineName=Vikass-MacBook-Air.local}
+[2025-11-14 13:01:58.109] [DEBUG] [Thread-29] [io.qase.commons.hooks.HooksServiceLoader] Found type interface io.qase.commons.hooks.HooksListener
+[2025-11-14 13:01:58.188] [INFO] [Thread-29] [io.qase.commons.reporters.CoreReporter] Starting test run
+[2025-11-14 13:01:59.948] [INFO] [Thread-29] [io.qase.commons.reporters.TestopsReporter] Test run 1178 started
+[2025-11-14 13:02:00.244] [DEBUG] [Thread-29] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"222f2bd7-3b74-499f-a7e3-8cde41fdfb01","title":"Test_without_any_Qase_annotations","signature":"com:example:tests::extendtest::test_without_any_qase_annotations","execution":{"startTime":1763105520095,"status":"PASSED","endTime":1763105520241,"duration":146,"thread":"main"},"fields":{},"attachments":[{"id":"3b3df7f4-4520-4226-b501-e74616fcd86b","filePath":"/Users/vikasnaithani/Qase/qase-java/testng-demo/reports/ExtentReport.html"}],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ExtendTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:02:00.262] [INFO] [Thread-29] [io.qase.commons.reporters.CoreReporter] Uploading results
+[2025-11-14 13:02:00.772] [DEBUG] [Thread-29] [io.qase.commons.client.ApiClientV2] Uploading results: class CreateResultsRequestV2 {
+    results: [class ResultCreate {
+        id: 222f2bd7-3b74-499f-a7e3-8cde41fdfb01
+        title: Test_without_any_Qase_annotations
+        signature: com:example:tests::extendtest::test_without_any_qase_annotations
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105520095E9
+            endTime: 1.763105520241E9
+            status: passed
+            duration: 146
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: [b977247730e44d336cafa8a5725f9cfacfb2b749]
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ExtendTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }]
+    additionalProperties: null
+}
+[2025-11-14 13:02:01.816] [INFO] [Thread-29] [io.qase.commons.reporters.CoreReporter] Completing test run
+[2025-11-14 13:02:02.132] [INFO] [Thread-29] [io.qase.commons.client.ApiClientV1] Test run link: https://app.qase.io/run/DW/dashboard/1178
+[2025-11-14 13:02:02.132] [INFO] [Thread-29] [io.qase.commons.reporters.TestopsReporter] Test run 1178 completed
+[2025-11-14 13:03:11.581] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporterFactory] Qase config: {"mode":"TESTOPS","fallback":"REPORT","environment":"local","rootSuite":"","debug":true,"testops":{"project":"DW","defect":false,"api":{"host":"qase.io","token":"75f94d727ebda50896914bff834cecdacf88274b5115fcf0e475be9d0c9d8893"},"run":{"title":"Regress run","description":"Regress run description","complete":true,"id":0,"tags":[]},"plan":{"id":0},"batch":{"size":100},"configurations":{"values":[],"createIfNotExists":false},"statusFilter":[]},"report":{"driver":"LOCAL","connection":{"local":{"format":"JSON","path":"./build/qase-report"}}},"statusMapping":{}}
+[2025-11-14 13:03:12.216] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporterFactory] Using host info: {system=mac os x, java=21, release=26.1, buildTool=3.9.10, reporter=4.1.20, arch=aarch64, version=26.1, machineName=Vikass-MacBook-Air.local}
+[2025-11-14 13:03:12.456] [DEBUG] [Thread-31] [io.qase.commons.hooks.HooksServiceLoader] Found type interface io.qase.commons.hooks.HooksListener
+[2025-11-14 13:03:12.569] [INFO] [Thread-31] [io.qase.commons.reporters.CoreReporter] Starting test run
+[2025-11-14 13:03:13.843] [INFO] [Thread-31] [io.qase.commons.reporters.TestopsReporter] Test run 1179 started
+[2025-11-14 13:03:19.174] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"ee47bd25-a13a-4d75-a3c0-f4c80cf9f1ba","title":"googleTitleTest","signature":"com:example:tests::screenshottest::googletitletest","execution":{"startTime":1763105595643,"status":"FAILED","endTime":1763105599170,"duration":3527,"stacktrace":"java.lang.AssertionError: Test failed: Incorrect page title. expected [This Title is Wrong!] but found [Google]\n\tat org.testng.Assert.fail(Assert.java:111)\n\tat org.testng.Assert.failNotEquals(Assert.java:1578)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:150)\n\tat org.testng.Assert.assertEquals(Assert.java:132)\n\tat org.testng.Assert.assertEquals(Assert.java:656)\n\tat com.example.tests.ScreenshotTest.googleTitleTest(ScreenshotTest.java:23)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:848)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:443)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:336)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1200)\n\tat org.testng.TestNG.runSuites(TestNG.java:1114)\n\tat org.testng.TestNG.run(TestNG.java:1082)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)\n","thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ScreenshotTest","publicId":0}]}},"muted":false,"message":"java.lang.AssertionError: Test failed: Incorrect page title. expected [This Title is Wrong!] but found [Google]","ignore":false}
+[2025-11-14 13:03:19.260] [INFO] [Thread-31] [io.qase.commons.reporters.TestopsReporter] See why this test failed: https://app.qase.io/run/DW/dashboard/1179?source=logs&status=%5B2%5D&search=googleTitleTest
+[2025-11-14 13:03:19.368] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"59630932-cc88-4d62-8793-9c4cba9907e4","title":"testMethod_alsoPasses","signature":"com:example:tests::paramstest::testmethod_alsopasses::{\"arg0\":\"Example value1\"}","execution":{"startTime":1763105599366,"status":"PASSED","endTime":1763105599367,"duration":1,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{"arg0":"Example value1"},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ParamsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.369] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"0278d888-0458-4af6-aab9-1e50845aa72a","title":"testMethod_alsoPasses","signature":"com:example:tests::paramstest::testmethod_alsopasses::{\"arg0\":\"Example value2\"}","execution":{"startTime":1763105599368,"status":"PASSED","endTime":1763105599368,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{"arg0":"Example value2"},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ParamsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.370] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"3772804c-6d5a-45b5-a44a-db54a4a0c879","title":"testMethod_alsoPasses","signature":"com:example:tests::paramstest::testmethod_alsopasses::{\"arg0\":\"Example value3\"}","execution":{"startTime":1763105599369,"status":"PASSED","endTime":1763105599369,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{"arg0":"Example value3"},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ParamsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.371] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"cb62f60d-df18-409b-8221-26f3f25f0675","title":"testMethod_success","signature":"com:example:tests::paramstest::testmethod_success::{\"arg0\":\"Example value1\"}","execution":{"startTime":1763105599370,"status":"PASSED","endTime":1763105599370,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{"arg0":"Example value1"},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ParamsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.372] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"c6303547-0aa5-4f01-b4ca-4109e6c99576","title":"testMethod_success","signature":"com:example:tests::paramstest::testmethod_success::{\"arg0\":\"Example value2\"}","execution":{"startTime":1763105599371,"status":"PASSED","endTime":1763105599371,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{"arg0":"Example value2"},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ParamsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.373] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"b4ac0d0f-cea7-46b4-bff1-bca335af7332","title":"testMethod_success","signature":"com:example:tests::paramstest::testmethod_success::{\"arg0\":\"Example value3\"}","execution":{"startTime":1763105599372,"status":"PASSED","endTime":1763105599372,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{"arg0":"Example value3"},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ParamsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.376] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"b8e1a381-4c84-4c83-981a-87e918c11fc4","title":"Test_without_any_Qase_annotations","signature":"com:example:tests::apptest::test_without_any_qase_annotations","execution":{"startTime":1763105599373,"status":"PASSED","endTime":1763105599374,"duration":1,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.AppTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.378] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"9864f676-c765-42b1-89dd-d4874deaab2a","title":"Test with `@QaseTitle` annotation","signature":"com:example:tests::titletest::test","execution":{"startTime":1763105599376,"status":"PASSED","endTime":1763105599376,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.TitleTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.391] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"60e6196a-fd0b-48e1-ae3e-0e255430defd","title":"testWithSteps_success","signature":"com:example:tests::stepstest::testwithsteps_success","execution":{"startTime":1763105599379,"status":"PASSED","endTime":1763105599390,"duration":11,"thread":"main"},"fields":{},"attachments":[],"steps":[{"id":"c600e386-fc71-4573-9de8-bbbe4a5fd8e9","data":{"action":"Step 1","attachments":[]},"execution":{"status":"PASSED","startTime":1763105599389,"endTime":1763105599390,"duration":1},"throwable":{"message":"null","class":"Unknown"},"attachments":[],"steps":[{"id":"73e11b95-31be-4f83-a9c3-c5d9934227b5","data":{"action":"Step 1.1","attachments":[]},"parentId":"c600e386-fc71-4573-9de8-bbbe4a5fd8e9","execution":{"status":"PASSED","startTime":1763105599389,"endTime":1763105599390,"duration":1},"throwable":{"message":"null","class":"Unknown"},"attachments":[],"steps":[]}]},{"id":"0e044d34-f4fe-442a-8473-e12375839df1","data":{"action":"Step 2","attachments":[]},"execution":{"status":"PASSED","startTime":1763105599390,"endTime":1763105599390,"duration":0},"throwable":{"message":"null","class":"Unknown"},"attachments":[],"steps":[]},{"id":"e0e053d1-a03b-4b31-8f79-703e9ca7a20d","data":{"action":"Step 3","attachments":[]},"execution":{"status":"PASSED","startTime":1763105599390,"endTime":1763105599390,"duration":0},"throwable":{"message":"null","class":"Unknown"},"attachments":[],"steps":[]}],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.StepsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.393] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"5358d20d-347f-4003-8081-73eddf549c87","title":"testWithFileAttachment","signature":"com:example:tests::attachtest::testwithfileattachment","execution":{"startTime":1763105599391,"status":"PASSED","endTime":1763105599392,"duration":1,"thread":"main"},"fields":{},"attachments":[{"id":"f10b4700-6e95-490c-a9ea-82245a02248b","filePath":"./src/test/java/com/example/tests/attachments/test-file.txt"}],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.AttachTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.394] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"82dc09b0-e0a3-41a1-9fa8-ea0775b4a137","title":"testWithInlineAttachment","signature":"com:example:tests::attachtest::testwithinlineattachment","execution":{"startTime":1763105599393,"status":"PASSED","endTime":1763105599393,"duration":0,"thread":"main"},"fields":{},"attachments":[{"id":"79045536-eaf8-4ae9-be1e-9421d4595085","fileName":"Inline.txt","mimeType":"text/plain","content":"This is the content of the file"}],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.AttachTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.396] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"7667caeb-00ae-405c-b49e-3c9d12689401","title":"testWithStepAttachment","signature":"com:example:tests::attachtest::testwithstepattachment","execution":{"startTime":1763105599394,"status":"PASSED","endTime":1763105599395,"duration":1,"thread":"main"},"fields":{},"attachments":[],"steps":[{"id":"c5030a46-28b2-4a31-abdf-ecd1d2ea1b14","data":{"action":"Step with attachment","attachments":[]},"execution":{"status":"PASSED","startTime":1763105599395,"endTime":1763105599395,"duration":0},"throwable":{"message":"null","class":"Unknown"},"attachments":[{"id":"15775f41-96af-45ca-8122-6908715e0112","fileName":"Inline.txt","mimeType":"text/plain","content":"This is the content of the file"}],"steps":[]}],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.AttachTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.397] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"fea6010e-753a-408d-a27f-b57c24cbf575","title":"testWithQaseId_success","signature":"1::com:example:tests::qaseidtest::testwithqaseid_success","testopsIds":[1],"execution":{"startTime":1763105599396,"status":"PASSED","endTime":1763105599397,"duration":1,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.QaseIdTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.400] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"223a7202-69ba-4cf8-96e7-946ac84b7835","title":"testWithFields_Description","signature":"com:example:tests::fieldstest::testwithfields_description","execution":{"startTime":1763105599398,"status":"PASSED","endTime":1763105599399,"duration":1,"thread":"main"},"fields":{"description":"Write your description here."},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.401] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"bee9524b-32dd-4471-acb6-8c5772fc3c1b","title":"testWithFields_Layer_api","signature":"com:example:tests::fieldstest::testwithfields_layer_api","execution":{"startTime":1763105599400,"status":"PASSED","endTime":1763105599400,"duration":0,"thread":"main"},"fields":{"layer":"api"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.442] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"e18caa33-ce5e-46ce-89f9-15497f815f16","title":"testWithFields_Layer_e2e","signature":"com:example:tests::fieldstest::testwithfields_layer_e2e","execution":{"startTime":1763105599403,"status":"PASSED","endTime":1763105599404,"duration":1,"thread":"main"},"fields":{"layer":"e2e"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.444] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"b19f3591-429d-455b-941e-78862804fad4","title":"testWithFields_Layer_unit","signature":"com:example:tests::fieldstest::testwithfields_layer_unit","execution":{"startTime":1763105599443,"status":"PASSED","endTime":1763105599444,"duration":1,"thread":"main"},"fields":{"layer":"unit"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.447] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"6b73856f-9c30-4a56-80f8-7d9a54df7644","title":"testWithFields_Postconditions","signature":"com:example:tests::fieldstest::testwithfields_postconditions","execution":{"startTime":1763105599445,"status":"PASSED","endTime":1763105599446,"duration":1,"thread":"main"},"fields":{"postconditions":"Write your postconditions here."},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.452] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"fec062e5-5db6-4038-9fe5-83797240a008","title":"testWithFields_Preconditions","signature":"com:example:tests::fieldstest::testwithfields_preconditions","execution":{"startTime":1763105599447,"status":"PASSED","endTime":1763105599447,"duration":0,"thread":"main"},"fields":{"preconditions":"Write your preconditions here."},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.456] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"dd0497f9-3323-42d9-ae8d-7078a9278dfb","title":"testWithFields_Priority_high","signature":"com:example:tests::fieldstest::testwithfields_priority_high","execution":{"startTime":1763105599453,"status":"PASSED","endTime":1763105599454,"duration":1,"thread":"main"},"fields":{"priority":"high"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.457] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"41bc8c42-986a-4ee2-90c8-6297cac8a37b","title":"testWithFields_Priority_low","signature":"com:example:tests::fieldstest::testwithfields_priority_low","execution":{"startTime":1763105599456,"status":"PASSED","endTime":1763105599457,"duration":1,"thread":"main"},"fields":{"priority":"low"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.459] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"23a42462-e539-42e6-bfc2-0e512920ff2c","title":"testWithFields_Priority_medium","signature":"com:example:tests::fieldstest::testwithfields_priority_medium","execution":{"startTime":1763105599458,"status":"PASSED","endTime":1763105599458,"duration":0,"thread":"main"},"fields":{"priority":"medium"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.461] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"75f10fac-2cdc-4f8e-b169-ba48f1551d07","title":"testWithFields_Severity_blocker","signature":"com:example:tests::fieldstest::testwithfields_severity_blocker","execution":{"startTime":1763105599460,"status":"PASSED","endTime":1763105599460,"duration":0,"thread":"main"},"fields":{"severity":"blocker"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.462] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"4c29e70d-ee4b-4ffc-b348-524fd02d5219","title":"testWithFields_Severity_critical","signature":"com:example:tests::fieldstest::testwithfields_severity_critical","execution":{"startTime":1763105599461,"status":"PASSED","endTime":1763105599462,"duration":1,"thread":"main"},"fields":{"severity":"critical"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.464] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"938cc596-0e8c-47cc-a76a-5aab09c18a51","title":"testWithFields_Severity_major","signature":"com:example:tests::fieldstest::testwithfields_severity_major","execution":{"startTime":1763105599463,"status":"PASSED","endTime":1763105599463,"duration":0,"thread":"main"},"fields":{"severity":"major"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.466] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"51c54318-8c39-473c-a7f6-b173826392fb","title":"testWithFields_Severity_minor","signature":"com:example:tests::fieldstest::testwithfields_severity_minor","execution":{"startTime":1763105599464,"status":"PASSED","endTime":1763105599464,"duration":0,"thread":"main"},"fields":{"severity":"minor"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.468] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"445bac70-58a5-42a3-bee8-f7530eb20423","title":"testWithFields_Severity_normal","signature":"com:example:tests::fieldstest::testwithfields_severity_normal","execution":{"startTime":1763105599467,"status":"PASSED","endTime":1763105599467,"duration":0,"thread":"main"},"fields":{"severity":"normal"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.470] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"d547767a-9a57-4a71-9fca-d75e0ad02332","title":"testWithFields_Severity_trivial","signature":"com:example:tests::fieldstest::testwithfields_severity_trivial","execution":{"startTime":1763105599469,"status":"PASSED","endTime":1763105599469,"duration":0,"thread":"main"},"fields":{"severity":"trivial"},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.FieldsTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.629] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"df58a63d-cc9e-4041-beff-6157d8ce48f2","title":"Test_without_any_Qase_annotations","signature":"com:example:tests::extendtest::test_without_any_qase_annotations","execution":{"startTime":1763105599470,"status":"PASSED","endTime":1763105599628,"duration":158,"thread":"main"},"fields":{},"attachments":[{"id":"12a17a89-6a36-41f8-a34d-3da30d28e7e4","filePath":"/Users/vikasnaithani/Qase/qase-java/testng-demo/reports/ExtentReport.html"}],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.ExtendTest","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.631] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"1fe4b8f7-e17c-42a0-9fec-44aff091cdb1","title":"testWithSuite_failed","signature":"com:example:tests::suitetest::testwithsuite_failed","execution":{"startTime":1763105599630,"status":"PASSED","endTime":1763105599630,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"Parent Suite","publicId":0},{"title":"Child Suite","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.632] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"5712dd0a-5522-4ad6-96a5-196b9210a97e","title":"testWithSuite_success","signature":"com:example:tests::suitetest::testwithsuite_success","execution":{"startTime":1763105599631,"status":"PASSED","endTime":1763105599631,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"Parent Suite","publicId":0}]}},"muted":false,"ignore":false}
+[2025-11-14 13:03:19.633] [DEBUG] [Thread-31] [io.qase.commons.reporters.CoreReporter] Adding result: {"id":"e0ba146b-b413-4496-b47b-6f1ec6dcfc12","title":"testWithComment_success","signature":"com:example:tests::commenttest::testwithcomment_success","execution":{"startTime":1763105599632,"status":"PASSED","endTime":1763105599632,"duration":0,"thread":"main"},"fields":{},"attachments":[],"steps":[],"params":{},"paramGroups":[],"relations":{"suite":{"data":[{"title":"com.example.tests.CommentTest","publicId":0}]}},"muted":false,"message":"This shall appears under the \u0027actual result\u0027 field of the result","ignore":false}
+[2025-11-14 13:03:19.651] [INFO] [Thread-31] [io.qase.commons.reporters.CoreReporter] Uploading results
+[2025-11-14 13:03:22.499] [DEBUG] [Thread-31] [io.qase.commons.client.ApiClientV2] Uploading results: class CreateResultsRequestV2 {
+    results: [class ResultCreate {
+        id: ee47bd25-a13a-4d75-a3c0-f4c80cf9f1ba
+        title: googleTitleTest
+        signature: com:example:tests::screenshottest::googletitletest
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105595643E9
+            endTime: 1.76310559917E9
+            status: failed
+            duration: 3527
+            stacktrace: java.lang.AssertionError: Test failed: Incorrect page title. expected [This Title is Wrong!] but found [Google]
+            	at org.testng.Assert.fail(Assert.java:111)
+            	at org.testng.Assert.failNotEquals(Assert.java:1578)
+            	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+            	at org.testng.Assert.assertEquals(Assert.java:132)
+            	at org.testng.Assert.assertEquals(Assert.java:656)
+            	at com.example.tests.ScreenshotTest.googleTitleTest(ScreenshotTest.java:23)
+            	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+            	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+            	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+            	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+            	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+            	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+            	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+            	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+            	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+            	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+            	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+            	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+            	at org.testng.TestRunner.run(TestRunner.java:621)
+            	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+            	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+            	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+            	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+            	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+            	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+            	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+            	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+            	at org.testng.TestNG.runSuites(TestNG.java:1114)
+            	at org.testng.TestNG.run(TestNG.java:1082)
+            	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+            	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+            	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+            	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+            	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+            	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+            	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+            	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+            
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: [d653392a12b8bcc5883ccc42244a0d8ebce7dc06]
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ScreenshotTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: java.lang.AssertionError: Test failed: Incorrect page title. expected [This Title is Wrong!] but found [Google]
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 59630932-cc88-4d62-8793-9c4cba9907e4
+        title: testMethod_alsoPasses
+        signature: com:example:tests::paramstest::testmethod_alsopasses::{"arg0":"Example value1"}
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599366E9
+            endTime: 1.763105599367E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {arg0=Example value1}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ParamsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 0278d888-0458-4af6-aab9-1e50845aa72a
+        title: testMethod_alsoPasses
+        signature: com:example:tests::paramstest::testmethod_alsopasses::{"arg0":"Example value2"}
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599368E9
+            endTime: 1.763105599368E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {arg0=Example value2}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ParamsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 3772804c-6d5a-45b5-a44a-db54a4a0c879
+        title: testMethod_alsoPasses
+        signature: com:example:tests::paramstest::testmethod_alsopasses::{"arg0":"Example value3"}
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599369E9
+            endTime: 1.763105599369E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {arg0=Example value3}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ParamsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: cb62f60d-df18-409b-8221-26f3f25f0675
+        title: testMethod_success
+        signature: com:example:tests::paramstest::testmethod_success::{"arg0":"Example value1"}
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.76310559937E9
+            endTime: 1.76310559937E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {arg0=Example value1}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ParamsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: c6303547-0aa5-4f01-b4ca-4109e6c99576
+        title: testMethod_success
+        signature: com:example:tests::paramstest::testmethod_success::{"arg0":"Example value2"}
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599371E9
+            endTime: 1.763105599371E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {arg0=Example value2}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ParamsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: b4ac0d0f-cea7-46b4-bff1-bca335af7332
+        title: testMethod_success
+        signature: com:example:tests::paramstest::testmethod_success::{"arg0":"Example value3"}
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599372E9
+            endTime: 1.763105599372E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {arg0=Example value3}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ParamsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: b8e1a381-4c84-4c83-981a-87e918c11fc4
+        title: Test_without_any_Qase_annotations
+        signature: com:example:tests::apptest::test_without_any_qase_annotations
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599373E9
+            endTime: 1.763105599374E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.AppTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 9864f676-c765-42b1-89dd-d4874deaab2a
+        title: Test with `@QaseTitle` annotation
+        signature: com:example:tests::titletest::test
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599376E9
+            endTime: 1.763105599376E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.TitleTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 60e6196a-fd0b-48e1-ae3e-0e255430defd
+        title: testWithSteps_success
+        signature: com:example:tests::stepstest::testwithsteps_success
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599379E9
+            endTime: 1.76310559939E9
+            status: passed
+            duration: 11
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: [class ResultStep {
+            data: class ResultStepData {
+                action: Step 1
+                expectedResult: null
+                inputData: null
+                attachments: null
+                additionalProperties: null
+            }
+            execution: class ResultStepExecution {
+                startTime: 1.763105599389E9
+                endTime: 1.76310559939E9
+                status: passed
+                duration: 1
+                comment: null
+                attachments: []
+                additionalProperties: null
+            }
+            steps: [class ResultStep {
+                data: class ResultStepData {
+                    action: Step 1.1
+                    expectedResult: null
+                    inputData: null
+                    attachments: null
+                    additionalProperties: null
+                }
+                execution: class ResultStepExecution {
+                    startTime: 1.763105599389E9
+                    endTime: 1.76310559939E9
+                    status: passed
+                    duration: 1
+                    comment: null
+                    attachments: []
+                    additionalProperties: null
+                }
+                steps: []
+                additionalProperties: null
+            }]
+            additionalProperties: null
+        }, class ResultStep {
+            data: class ResultStepData {
+                action: Step 2
+                expectedResult: null
+                inputData: null
+                attachments: null
+                additionalProperties: null
+            }
+            execution: class ResultStepExecution {
+                startTime: 1.76310559939E9
+                endTime: 1.76310559939E9
+                status: passed
+                duration: 0
+                comment: null
+                attachments: []
+                additionalProperties: null
+            }
+            steps: []
+            additionalProperties: null
+        }, class ResultStep {
+            data: class ResultStepData {
+                action: Step 3
+                expectedResult: null
+                inputData: null
+                attachments: null
+                additionalProperties: null
+            }
+            execution: class ResultStepExecution {
+                startTime: 1.76310559939E9
+                endTime: 1.76310559939E9
+                status: passed
+                duration: 0
+                comment: null
+                attachments: []
+                additionalProperties: null
+            }
+            steps: []
+            additionalProperties: null
+        }]
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.StepsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 5358d20d-347f-4003-8081-73eddf549c87
+        title: testWithFileAttachment
+        signature: com:example:tests::attachtest::testwithfileattachment
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599391E9
+            endTime: 1.763105599392E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: [628ad325edcef0738d2939563e37423ef958bfb4]
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.AttachTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 82dc09b0-e0a3-41a1-9fa8-ea0775b4a137
+        title: testWithInlineAttachment
+        signature: com:example:tests::attachtest::testwithinlineattachment
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599393E9
+            endTime: 1.763105599393E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: [a5193034cd9dc08486c66a12d8ea4276ba3e9a44]
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.AttachTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 7667caeb-00ae-405c-b49e-3c9d12689401
+        title: testWithStepAttachment
+        signature: com:example:tests::attachtest::testwithstepattachment
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599394E9
+            endTime: 1.763105599395E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: [class ResultStep {
+            data: class ResultStepData {
+                action: Step with attachment
+                expectedResult: null
+                inputData: null
+                attachments: null
+                additionalProperties: null
+            }
+            execution: class ResultStepExecution {
+                startTime: 1.763105599395E9
+                endTime: 1.763105599395E9
+                status: passed
+                duration: 0
+                comment: null
+                attachments: [3d7e7b387a9e41dea1078119e2fa102f82b1fab6]
+                additionalProperties: null
+            }
+            steps: []
+            additionalProperties: null
+        }]
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.AttachTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: fea6010e-753a-408d-a27f-b57c24cbf575
+        title: testWithQaseId_success
+        signature: 1::com:example:tests::qaseidtest::testwithqaseid_success
+        testopsId: null
+        testopsIds: [1]
+        execution: class ResultExecution {
+            startTime: 1.763105599396E9
+            endTime: 1.763105599397E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.QaseIdTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 223a7202-69ba-4cf8-96e7-946ac84b7835
+        title: testWithFields_Description
+        signature: com:example:tests::fieldstest::testwithfields_description
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599398E9
+            endTime: 1.763105599399E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: Write your description here.
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: bee9524b-32dd-4471-acb6-8c5772fc3c1b
+        title: testWithFields_Layer_api
+        signature: com:example:tests::fieldstest::testwithfields_layer_api
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.7631055994E9
+            endTime: 1.7631055994E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: api
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: e18caa33-ce5e-46ce-89f9-15497f815f16
+        title: testWithFields_Layer_e2e
+        signature: com:example:tests::fieldstest::testwithfields_layer_e2e
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599403E9
+            endTime: 1.763105599404E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: e2e
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: b19f3591-429d-455b-941e-78862804fad4
+        title: testWithFields_Layer_unit
+        signature: com:example:tests::fieldstest::testwithfields_layer_unit
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599443E9
+            endTime: 1.763105599444E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: unit
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 6b73856f-9c30-4a56-80f8-7d9a54df7644
+        title: testWithFields_Postconditions
+        signature: com:example:tests::fieldstest::testwithfields_postconditions
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599445E9
+            endTime: 1.763105599446E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: Write your postconditions here.
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: fec062e5-5db6-4038-9fe5-83797240a008
+        title: testWithFields_Preconditions
+        signature: com:example:tests::fieldstest::testwithfields_preconditions
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599447E9
+            endTime: 1.763105599447E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: Write your preconditions here.
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: dd0497f9-3323-42d9-ae8d-7078a9278dfb
+        title: testWithFields_Priority_high
+        signature: com:example:tests::fieldstest::testwithfields_priority_high
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599453E9
+            endTime: 1.763105599454E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: high
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 41bc8c42-986a-4ee2-90c8-6297cac8a37b
+        title: testWithFields_Priority_low
+        signature: com:example:tests::fieldstest::testwithfields_priority_low
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599456E9
+            endTime: 1.763105599457E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: low
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 23a42462-e539-42e6-bfc2-0e512920ff2c
+        title: testWithFields_Priority_medium
+        signature: com:example:tests::fieldstest::testwithfields_priority_medium
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599458E9
+            endTime: 1.763105599458E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: medium
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 75f10fac-2cdc-4f8e-b169-ba48f1551d07
+        title: testWithFields_Severity_blocker
+        signature: com:example:tests::fieldstest::testwithfields_severity_blocker
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.76310559946E9
+            endTime: 1.76310559946E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: blocker
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 4c29e70d-ee4b-4ffc-b348-524fd02d5219
+        title: testWithFields_Severity_critical
+        signature: com:example:tests::fieldstest::testwithfields_severity_critical
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599461E9
+            endTime: 1.763105599462E9
+            status: passed
+            duration: 1
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: critical
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 938cc596-0e8c-47cc-a76a-5aab09c18a51
+        title: testWithFields_Severity_major
+        signature: com:example:tests::fieldstest::testwithfields_severity_major
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599463E9
+            endTime: 1.763105599463E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: major
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 51c54318-8c39-473c-a7f6-b173826392fb
+        title: testWithFields_Severity_minor
+        signature: com:example:tests::fieldstest::testwithfields_severity_minor
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599464E9
+            endTime: 1.763105599464E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: minor
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 445bac70-58a5-42a3-bee8-f7530eb20423
+        title: testWithFields_Severity_normal
+        signature: com:example:tests::fieldstest::testwithfields_severity_normal
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599467E9
+            endTime: 1.763105599467E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: normal
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: d547767a-9a57-4a71-9fca-d75e0ad02332
+        title: testWithFields_Severity_trivial
+        signature: com:example:tests::fieldstest::testwithfields_severity_trivial
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599469E9
+            endTime: 1.763105599469E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: trivial
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.FieldsTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: df58a63d-cc9e-4041-beff-6157d8ce48f2
+        title: Test_without_any_Qase_annotations
+        signature: com:example:tests::extendtest::test_without_any_qase_annotations
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.76310559947E9
+            endTime: 1.763105599628E9
+            status: passed
+            duration: 158
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: [ff65998683d346c7358c5f18bfe82bbfb12a770e]
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.ExtendTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 1fe4b8f7-e17c-42a0-9fec-44aff091cdb1
+        title: testWithSuite_failed
+        signature: com:example:tests::suitetest::testwithsuite_failed
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.76310559963E9
+            endTime: 1.76310559963E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: Parent Suite
+                    publicId: null
+                    additionalProperties: null
+                }, class RelationSuiteItem {
+                    title: Child Suite
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: 5712dd0a-5522-4ad6-96a5-196b9210a97e
+        title: testWithSuite_success
+        signature: com:example:tests::suitetest::testwithsuite_success
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599631E9
+            endTime: 1.763105599631E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: Parent Suite
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: null
+        defect: false
+        additionalProperties: null
+    }, class ResultCreate {
+        id: e0ba146b-b413-4496-b47b-6f1ec6dcfc12
+        title: testWithComment_success
+        signature: com:example:tests::commenttest::testwithcomment_success
+        testopsId: null
+        testopsIds: null
+        execution: class ResultExecution {
+            startTime: 1.763105599632E9
+            endTime: 1.763105599632E9
+            status: passed
+            duration: 0
+            stacktrace: null
+            thread: main
+            additionalProperties: null
+        }
+        fields: class ResultCreateFields {
+            author: null
+            description: null
+            preconditions: null
+            postconditions: null
+            layer: null
+            severity: null
+            priority: null
+            behavior: null
+            type: null
+            muted: null
+            isFlaky: null
+            executedBy: null
+            additionalProperties: null
+        }
+        attachments: []
+        steps: []
+        stepsType: classic
+        params: {}
+        paramGroups: []
+        relations: class ResultRelations {
+            suite: class RelationSuite {
+                data: [class RelationSuiteItem {
+                    title: com.example.tests.CommentTest
+                    publicId: null
+                    additionalProperties: null
+                }]
+                additionalProperties: null
+            }
+            additionalProperties: null
+        }
+        message: This shall appears under the 'actual result' field of the result
+        defect: false
+        additionalProperties: null
+    }]
+    additionalProperties: null
+}
+[2025-11-14 13:03:23.826] [INFO] [Thread-31] [io.qase.commons.reporters.CoreReporter] Completing test run
+[2025-11-14 13:03:24.127] [INFO] [Thread-31] [io.qase.commons.client.ApiClientV1] Test run link: https://app.qase.io/run/DW/dashboard/1179
+[2025-11-14 13:03:24.127] [INFO] [Thread-31] [io.qase.commons.reporters.TestopsReporter] Test run 1179 completed
